@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- <color name="app_main_header">#2a014f</color>
+    <color name="app_main_background">#cccccc</color>
+    <color name="ColorPrimary">#2a014f</color>
+    <color name="ColorPrimaryDark">#ff18012f</color>-->
+
+    <color name="footer_color">#ffefefef</color>
+    <color name="app_main_background">#ffffffff</color>
+    <color name="ColorPrimary">#e43a43</color>
+    <color name="tab_back_color">#37a6e1</color>
+    <color name="ColorPrimaryDark">#9E9E9E</color>
+    <color name="colorAccent">#ff32b74f</color>
+    <color name="white_light">#ffe5e5e5</color>
+    <color name="light_grey">#ff8b8b8b</color>
+    <color name="light_green">#63cd9c</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#000000</color>
+</resources>

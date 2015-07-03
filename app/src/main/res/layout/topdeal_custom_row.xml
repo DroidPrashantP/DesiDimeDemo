@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/parent_wrapper"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_light"
+    >
+
+    <android.support.v7.widget.CardView
+        android:clickable="true"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="3dp"
+        card_view:cardBackgroundColor="@color/white"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/main_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                />
+            <View
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/image_rect_bg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ShopClues:Meggi Healty Soup"
+                android:id="@+id/txt_product_name"
+                android:textSize ="@dimen/large_font"
+                android:textColor ="@color/black"
+                android:textStyle ="bold"
+                android:layout_alignTop="@+id/main_image"
+                android:layout_toRightOf="@+id/main_image"
+                android:layout_toEndOf="@+id/main_image"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ShopClues:Meggi Healty Soup - set the three dsgnkng dksgnakngs  asnak asnh ashoana hah asnha a"
+                android:id="@+id/txt_product_description"
+                android:layout_below="@+id/txt_product_name"
+                android:layout_alignLeft="@+id/txt_product_name"
+                android:layout_alignStart="@+id/txt_product_name"
+                android:textSize ="@dimen/small_font"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:layout_marginTop="4dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                />
+            <RelativeLayout
+                android:id="@+id/bottomlayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/footer_color"
+                android:layout_below="@+id/main_image"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/chat_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_comment"/>
+                <TextView
+                    android:id="@+id/chat_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                    android:textSize ="@dimen/small_font"
+                    android:textColor ="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/chat_img"
+                    android:layout_toEndOf="@+id/chat_img" />
+                <TextView
+                    android:id="@+id/view1"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white_light"
+                    android:textStyle ="bold"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/chat_count"
+                    android:layout_toEndOf="@+id/chat_count" />
+                <ImageView
+                    android:id="@+id/share_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_popularity"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/view1"
+                    android:layout_toEndOf="@+id/view1"
+                    android:layout_marginLeft="8dp"
+                    />
+                <TextView
+                    android:id="@+id/share_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                    android:textSize ="@dimen/small_font"
+                    android:textColor ="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/share_img"
+                    android:layout_toEndOf="@+id/share_img" />
+                <TextView
+                    android:id="@+id/view2"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white_light"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@+id/share_count"
+                    android:layout_toEndOf="@+id/share_count" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u20B9 830.00"
+                    android:id="@+id/txt_prise"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/small_font"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Yatra"
+                    android:id="@+id/txt_product_title"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/txt_prise"
+                    android:layout_marginRight="8dp"
+                    android:textStyle ="bold"
+                    android:textSize="@dimen/small_font"
+                    android:textColor ="@color/tab_back_color"
+                    android:layout_toStartOf="@+id/txt_prise" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/rl_toptab"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <View
+            android:id="@+id/top_back_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@color/tab_back_color"
+            android:visibility="visible"
+        >
+        </View>
+
+        <TextView
+            android:id="@+id/text_top"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Top"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+           />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white_light"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_populartab"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <View
+            android:id="@+id/popular_back_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@color/tab_back_color"
+            android:visibility="gone"
+  />
+
+        <TextView
+            android:id="@+id/txt_popular"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Popular"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

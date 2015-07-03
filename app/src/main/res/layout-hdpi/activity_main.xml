@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <!-- Your normal content view -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_height="54dp"
+        android:layout_width="match_parent"
+        android:background="@color/ColorPrimary"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            <ImageView
+                android:id="@+id/img_drawer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_drawer"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:padding="4dp"
+                />
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Deals"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/xtra_large_font"
+                android:typeface="serif"
+                />
+            <ImageView
+                android:id="@+id/img_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_menu"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:padding="4dp"
+                />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/reclyclerview_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:clickable="true"
+        android:layout_below="@+id/tool_bar"
+        >
+        <include
+            android:id="@+id/tabHolder"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            layout="@layout/tablayout" >
+        </include>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:background="@color/white_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tabHolder"
+            tools:context=".MainActivity" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+    </RelativeLayout>

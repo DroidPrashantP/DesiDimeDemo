@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DesiDimeApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="oops">Oops!</string>
+    <string name="you_dont_have_internt_conn">You don\'t have internet connection. Please try again.</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Try_again">Try Again?</string>
+
+</resources>
